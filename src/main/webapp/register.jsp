@@ -41,7 +41,7 @@
                 </div>
                 <CENter>
 	                <div class="mt-3">
-	                  <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html" type="submit" value="SIGN IN">
+	                  <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"  type="submit" value="SIGN IN">
 	                </div></CENter>
                 <div class="text-center mt-4 font-weight-light">
                   Already have an account? <a href="login.jsp" class="text-primary">Login</a>
