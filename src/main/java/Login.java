@@ -37,8 +37,8 @@ public class Login extends HttpServlet {
                 response.sendRedirect("admin_Page.jsp");
             } else if (role.equals("patient")) {
                 response.sendRedirect("patient_Page.jsp");
-            } else if (role.equals("lab_attendant")) {
-                response.sendRedirect("lab_attendant_Page.jsp");
+            } else if (role.equals("lab_assistant")) {
+                response.sendRedirect("lab_assistant_Page.jsp");
             }
         } else {
             // If credentials are invalid, display an error message
