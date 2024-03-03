@@ -34,14 +34,13 @@ public class Login extends HttpServlet {
         if (!role.isEmpty()) {
             // Redirect users to their respective pages based on roles
             if (role.equals("admin")) {
-                response.sendRedirect("admin_Page.jsp");
+                response.sendRedirect("admin/admin.jsp");
             } else if (role.equals("patient")) {
                 response.sendRedirect("patient_Page.jsp");
             } else if (role.equals("lab_assistant")) {
                 response.sendRedirect("lab_assistant_Page.jsp");
             }
         } else {
-            // If credentials are invalid, display an error message
             PrintWriter out = response.getWriter();
             out.println("<html><body><p>Invalid username or password.</p></body></html>");
         }
