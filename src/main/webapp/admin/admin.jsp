@@ -207,7 +207,7 @@
             </a>
             <div class="collapse" id="doctor">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/doctor/doctor-view.html">View Doctors</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../admin/doctor/doctor-view.jsp">View Doctors</a></li>  
               </ul>
             </div>
           </li>
