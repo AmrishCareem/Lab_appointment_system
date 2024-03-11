@@ -10,9 +10,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+ 
 
-@WebServlet("/register")
-public class Register extends HttpServlet {
+@WebServlet("/admin/lab-assistant/lab-assistant-create")
+public class lab_assistant_create extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,7 +32,7 @@ public class Register extends HttpServlet {
 	            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/user_db", "root", "");
 	            
 	            // Prepared statement to prevent SQL injection
-	            String query = "INSERT INTO users (username, email, nic, password, role) VALUES (?, ?, ?, ?, 'patient')";
+	            String query = "INSERT INTO users (username, email, nic, password, role) VALUES (?, ?, ?, ?, 'lab_assistant')";
 	            preparedStatement = connection.prepareStatement(query);
 	            preparedStatement.setString(1, username);
 	            preparedStatement.setString(2, email);
@@ -42,7 +43,7 @@ public class Register extends HttpServlet {
 	            int rowsAffected = preparedStatement.executeUpdate();
 	            if (rowsAffected > 0) {
 	                // User registered successfully, redirect to login.jsp
-	                response.sendRedirect("login.jsp");
+	                response.sendRedirect("lab-assistant-view.jsp");
 	            } else {
 	                // Failed to register user
 	                response.getWriter().println("Failed to register user.");

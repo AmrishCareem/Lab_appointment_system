@@ -39,4 +39,44 @@
     <servlet-name>Register</servlet-name>
     <url-pattern>/Register</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>lab_assistant_createDAO</display-name>
+    <servlet-name>lab_assistant_createDAO</servlet-name>
+    <servlet-class>lab_assistant_createDAO</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lab_assistant_createDAO</servlet-name>
+    <url-pattern>/lab_assistant_createDAO</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>lab_assistant_create</display-name>
+    <servlet-name>lab_assistant_create</servlet-name>
+    <servlet-class>lab_assistant_create</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lab_assistant_create</servlet-name>
+    <url-pattern>/admin/lab-assistant/lab-assistant-create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>doctor</display-name>
+    <servlet-name>doctor</servlet-name>
+    <servlet-class>doctor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doctor</servlet-name>
+    <url-pattern>/admin/doctor/doctor-create</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorListServlet</display-name>
+    <servlet-name>DoctorListServlet</servlet-name>
+    <servlet-class>DoctorListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorListServlet</servlet-name>
+    <url-pattern>/DoctorListServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

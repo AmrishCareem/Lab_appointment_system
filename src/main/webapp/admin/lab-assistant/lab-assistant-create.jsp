@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ABC hospital</title>
+  
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
   <!-- endinject -->
@@ -239,44 +240,32 @@
             <div class="card">
 
                <div class="card-header">
-                        <h4>CREATE DOCTOR
-                        <a href="doctor-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
+                        <h4>CREATE LAB ASSISTANT
+                        <a href="lab-assistant-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
                     </h4>
                </div>
               <div class="card-body">
                 
-                <form class="forms-sample" action="/Lab_appointment_system/admin/doctor/doctor-create" method="post">
+                <form class="forms-sample" action="/Lab_appointment_system/admin/lab-assistant/lab-assistant-create" method="post">
                   <div class="form-group">
                     <label for="exampleInputName1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" name="name" required>
+                    <input type="text" name="username" class="form-control" id="exampleInputName1" placeholder="Name" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" name="email" required>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail3" placeholder="Email" required>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputCity1">Specialization</label>
-                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Specialization" name="specialization" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Experience Year</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Experience Year" name="experience_year" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">SLMC ID</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="SLMC ID" name="slmc_id" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Contact Number</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Contact Number" name="contact_number" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Address</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Address" name="address" required>
+                    <label for="exampleInputPassword4">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword4" placeholder="Password" required>
                   </div>
                   
-                  <button type="submit" class="btn btn-primary me-2">Submit</button>                  
-                  <button class="btn btn-light"><a href="doctor-view.jsp">Cancel</a></button>
+                  <div class="form-group">
+                    <label for="exampleInputCity1">NIC</label>
+                    <input type="text" name="nic" class="form-control" id="exampleInputCity1" placeholder="NIC" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  <button class="btn btn-light" ><a href="lab-assistant-view.jsp">Cancel</a></button>
                 </form>
               </div>
             </div>
@@ -285,6 +274,7 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.jsp -->
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

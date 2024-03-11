@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ABC hospital</title>
+  <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
   <!-- endinject -->
@@ -234,57 +235,93 @@
           <!-- ====================================================
                               Content
           ==================================================== -->
-
-          <div class="col-12 grid-margin stretch-card">
+          <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
-
-               <div class="card-header">
-                        <h4>CREATE DOCTOR
-                        <a href="doctor-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
-                    </h4>
-               </div>
+              <div class="card-header">
+                <h4>LAB TESTS
+                <a href="lab-test-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
+            </h4>
+       </div>
               <div class="card-body">
-                
-                <form class="forms-sample" action="/Lab_appointment_system/admin/doctor/doctor-create" method="post">
-                  <div class="form-group">
-                    <label for="exampleInputName1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCity1">Specialization</label>
-                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Specialization" name="specialization" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Experience Year</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Experience Year" name="experience_year" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">SLMC ID</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="SLMC ID" name="slmc_id" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Contact Number</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Contact Number" name="contact_number" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Address</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Address" name="address" required>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary me-2">Submit</button>                  
-                  <button class="btn btn-light"><a href="doctor-view.jsp">Cancel</a></button>
-                </form>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>
+                            Id
+                        </th>
+                        
+                        <th>
+                          Name
+                        </th>
+                        
+                        
+                        <th>
+                          Actions
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+              
+                      <tr>
+                       <td>
+                        01
+                       </td>
+                        <td>
+                          test1
+                        </td>
+                       
+                        <td>
+                          <a onclick="return confirm('Do you want to edit this')"
+                          href="">
+                          <i class="mdi mdi-pencil text-success"
+                              style="font-size: 24px;"></i>
+                      </a>
+
+
+                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          href="">
+                          <i class="mdi mdi-delete text-danger"
+                      style="font-size: 24px;"></i>
+                      </a>
+                        </td>
+                      </tr>
+                      <tr>
+                       
+                        <td>
+                            02
+                        </td>
+
+                        <td>
+                            test2
+                        </td>
+                        <td>
+                          <a onclick="return confirm('Do you want to edit this')"
+                          href="">
+                          <i class="mdi mdi-pencil text-success"
+                              style="font-size: 24px;"></i>
+                      </a>
+
+
+                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          href="">
+                          <i class="mdi mdi-delete text-danger"
+                      style="font-size: 24px;"></i>
+                      </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
+        
        
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.jsp -->
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

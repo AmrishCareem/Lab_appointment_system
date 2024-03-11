@@ -1,7 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -21,12 +20,12 @@
 <body>
   <div class="container-scroller">
   
-    <!-- partial:partials/_navbar.html -->
+    <!-- partial:partials/_navbar.jsp -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo" href="../index.jsp"><img src="../../images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../index.jsp"><img src="../../images/logo-mini.svg" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
@@ -163,11 +162,11 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.jsp -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">
+            <a class="nav-link" href="../index.jsp">
               <i class="mdi mdi-home menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -181,7 +180,7 @@
             </a>
             <div class="collapse" id="lab-assistant">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-assistant/lab-assistant-view.html">View Lab Assistant</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-assistant/lab-assistant-view.jsp">View Lab Assistant</a></li>  
               </ul>
             </div>
           </li>         
@@ -194,7 +193,7 @@
             </a>
             <div class="collapse" id="patient">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/patient/patient-view.html">View Patients</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/patient/patient-view.jsp">View Patients</a></li>  
               </ul>
             </div>
           </li>
@@ -207,7 +206,7 @@
             </a>
             <div class="collapse" id="doctor">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/doctor/doctor-view.html">View Doctors</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/doctor/doctor-view.jsp">View Doctors</a></li>  
               </ul>
             </div>
           </li>
@@ -220,7 +219,7 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.html">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
               </ul>
             </div>
           </li>
@@ -333,13 +332,8 @@
        
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
-        <footer class="footer">
-        <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © <a href="https://www.bootstrapdash.com/" target="_blank">bootstrapdash.com </a>2021</span>
-          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Only the best <a href="https://www.bootstrapdash.com/" target="_blank"> Bootstrap dashboard  </a> templates</span>
-        </div>
-        </footer>
+        <!-- partial:partials/_footer.jsp -->
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->

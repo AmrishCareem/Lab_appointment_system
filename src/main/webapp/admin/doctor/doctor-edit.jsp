@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="../../css/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
-</head>
 <body>
   <div class="container-scroller">
   
@@ -238,45 +237,54 @@
           <div class="col-12 grid-margin stretch-card">
             <div class="card">
 
-               <div class="card-header">
-                        <h4>CREATE DOCTOR
-                        <a href="doctor-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
-                    </h4>
-               </div>
+              <div class="card-header">
+                <h4>EDIT DOCTOR
+                <a href="doctor-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
+            </h4>
+       </div>
               <div class="card-body">
+               
                 
-                <form class="forms-sample" action="/Lab_appointment_system/admin/doctor/doctor-create" method="post">
+                <form class="forms-sample">
                   <div class="form-group">
                     <label for="exampleInputName1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" name="name" required>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail3">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" name="email" required>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputCity1">Specialization</label>
-                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Specialization" name="specialization" required>
+                    <label for="exampleInputPassword4">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputName1">Experience Year</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Experience Year" name="experience_year" required>
+                    <label for="exampleSelectGender">Gender</label>
+                      <select class="form-control" id="exampleSelectGender">
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                  <div class="form-group">
+                    <label>File upload</label>
+                    <input type="file" name="img[]" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                      <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                      <span class="input-group-append">
+                        <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                      </span>
+                    </div>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputName1">SLMC ID</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="SLMC ID" name="slmc_id" required>
+                    <label for="exampleInputCity1">City</label>
+                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputName1">Contact Number</label>
-                    <input type="number" class="form-control" id="exampleInputName1" placeholder="Contact Number" name="contact_number" required>
+                    <label for="exampleTextarea1">Textarea</label>
+                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputName1">Address</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Address" name="address" required>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-primary me-2">Submit</button>                  
-                  <button class="btn btn-light"><a href="doctor-view.jsp">Cancel</a></button>
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  <button class="btn btn-light">Cancel</button>
                 </form>
               </div>
             </div>
@@ -285,6 +293,7 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.jsp -->
+
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
