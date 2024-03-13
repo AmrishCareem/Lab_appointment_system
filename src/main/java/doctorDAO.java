@@ -1,6 +1,12 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.ResultSet;
+
+
+
 
 public class doctorDAO {
 	private Connection connection;
@@ -25,5 +31,44 @@ public class doctorDAO {
             e.printStackTrace();
             return false;
         }
+    }
+    
+    public List<Doctorbean> getAll()
+    {
+    
+    	try {
+    		 List<Doctorbean> doctors = new ArrayList<>();
+
+    	    	String query = "SELECT * FROM `doctor`";
+    		PreparedStatement preparedStatement = connection.prepareStatement(query);
+            ResultSet result = preparedStatement.executeQuery();	
+            
+            while (result.next()) {
+                int id = result.getInt("id");
+                String name = result.getString("name");
+                String email = result.getString("email");
+                String specialization = result.getString("specialization");
+                int experienceYear = result.getInt("experience_year");
+                int slmcId = result.getInt("slmc_id");
+                int contactNumber = result.getInt("contact_number");
+                String address = result.getString("address");
+
+                Doctorbean doctor = new Doctorbean();
+                doctor.setId(id);
+                doctor.setName(name);
+                doctor.setEmail(email);
+                doctor.setSpecialization(specialization);
+                doctor.setExperienceYear(experienceYear);
+                doctor.setSlmcId(slmcId);
+                doctor.setContactNumber(contactNumber);
+                doctor.setAddress(address);
+
+                doctors.add(doctor);
+            }
+           return doctors;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+    	
     }
 }
