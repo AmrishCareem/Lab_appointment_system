@@ -220,9 +220,20 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+              </ul>
+            </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+              </ul>
+            </div>
+            
           </li>
          
         </ul>
@@ -236,7 +247,7 @@
               <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex align-items-end flex-wrap">
                   <div class="me-md-3 me-xl-5">
-                    <h2>Welcome back,</h2>
+                    <h2>ABC LAB APPOITMENT SYSTEM</h2>
                     <p class="mb-md-0">Your analytics dashboard template.</p>
                   </div>
                   <div class="d-flex">
@@ -245,7 +256,7 @@
                     <p class="text-primary mb-0 hover-cursor">Analytics</p>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-end flex-wrap">
+                <!-- <div class="d-flex justify-content-between align-items-end flex-wrap">
                   <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">
                     <i class="mdi mdi-download text-muted"></i>
                   </button>
@@ -256,11 +267,11 @@
                     <i class="mdi mdi-plus text-muted"></i>
                   </button>
                   <button class="btn btn-primary mt-2 mt-xl-0">Generate report</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body dashboard-tabs p-0">
@@ -424,8 +435,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
+          </div> -->
+          <!-- <div class="row">
             <div class="col-md-7 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -538,7 +549,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.jsp -->
 

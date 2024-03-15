@@ -220,9 +220,20 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+              </ul>
+            </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+              </ul>
+            </div>
+            
           </li>
          
         </ul>

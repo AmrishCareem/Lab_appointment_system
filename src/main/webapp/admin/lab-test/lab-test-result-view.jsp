@@ -249,8 +249,8 @@
           <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
               <div class="card-header">
-                <h4>LAB ASSISTANT
-                <a href="lab-assistant-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
+                <h4>LAB TESTS RESULT
+                <a href="lab-test-result-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
             </h4>
        </div>
               <div class="card-body">
@@ -258,80 +258,60 @@
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th>
-                          id
-                        </th>
-                        <th>
-                          Name
-                        </th>
-                        <th>
-                          Email
-                        </th>
-                        <th>
-                          NIC
-                        </th>
+                        <th>Id</th>
                         
-                        <th>
-                          Actions
-                        </th>
+                        <th>Lab Register ID</th>
+
+                        <th>Patient Name</th>
+
+                        <th>Result OutPut</th>
+
+                        <th>Actions</th>
+
                       </tr>
+
                     </thead>
                     <tbody>
               
                       <tr>
-                        <td >
-                          1
-                        </td>
-                        <td>
-                          John Doe
-                        </td>
-                       <td>
-                        assistant1@gmail.com
-                       </td>
-                        <td>
-                          0771234567
-                        </td>
+                        <td>01</td>
+                        <td>6601</td>
+                        <td>Jathaf</td>
+                        <td>Good Health</td>
+                        
+                       
                         <td>
                           <a onclick="return confirm('Do you want to edit this')"
                           href="">
                           <i class="mdi mdi-pencil text-success"
                               style="font-size: 24px;"></i>
-                      </a>
-
-
-                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          </a>
+                          <a onclick="return confirm('Are You Sure To Delete This')"
                           href="">
                           <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
+                          style="font-size: 24px;"></i>
+                          </a>
                         </td>
                       </tr>
+                      
                       <tr>
-                        <td >
-                          2
-                        </td>
-                        <td>
-                          Henry Tom
-                        </td>
-                        <td>
-                         assistant2@gmail.com
-                        </td>
-                        <td>
-                          077666888
-                        </td>
+                        <td>01</td>
+                        <td>6601</td>
+                        <td>Jathaf</td>
+                        <td>Good Health</td>
+                        
+                       
                         <td>
                           <a onclick="return confirm('Do you want to edit this')"
                           href="">
                           <i class="mdi mdi-pencil text-success"
                               style="font-size: 24px;"></i>
-                      </a>
-
-
-                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          </a>
+                          <a onclick="return confirm('Are You Sure To Delete This')"
                           href="">
                           <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
+                          style="font-size: 24px;"></i>
+                          </a>
                         </td>
                       </tr>
                     </tbody>
@@ -354,7 +334,7 @@
   </div>
   <!-- container-scroller -->
 
-   <!-- plugins:js -->
+  <!-- plugins:js -->
 <script src="../../vendors/base/vendor.bundle.base.js"></script>
 <!-- endinject -->
 <!-- Plugin js for this page-->

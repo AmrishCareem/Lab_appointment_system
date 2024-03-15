@@ -246,101 +246,55 @@
           <!-- ====================================================
                               Content
           ==================================================== -->
-          <div class="col-lg-12 grid-margin stretch-card">
+
+          <div class="col-12 grid-margin stretch-card">
             <div class="card">
-              <div class="card-header">
-                <h4>LAB ASSISTANT
-                <a href="lab-assistant-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
-            </h4>
-       </div>
+
+               <div class="card-header">
+                        <h4>CREATE LAB REGISTRATION
+                        <a href="lab-test-result-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
+                    </h4>
+               </div>
               <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th>
-                          id
-                        </th>
-                        <th>
-                          Name
-                        </th>
-                        <th>
-                          Email
-                        </th>
-                        <th>
-                          NIC
-                        </th>
-                        
-                        <th>
-                          Actions
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-              
-                      <tr>
-                        <td >
-                          1
-                        </td>
-                        <td>
-                          John Doe
-                        </td>
-                       <td>
-                        assistant1@gmail.com
-                       </td>
-                        <td>
-                          0771234567
-                        </td>
-                        <td>
-                          <a onclick="return confirm('Do you want to edit this')"
-                          href="">
-                          <i class="mdi mdi-pencil text-success"
-                              style="font-size: 24px;"></i>
-                      </a>
+                
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputPatientId">Lab Register ID</label>
+                    <input type="text" class="form-control" id="exampleInputPatientId" placeholder="Lab Register ID">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="exampleInputPatientName">Patient Name</label>
+                    <input type="text" class="form-control" id="exampleInputPatientName" placeholder="Patient Name">
+                  </div>
 
-                      <a onclick="return confirm('Are You Sure To Delete This')"
-                          href="">
-                          <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td >
-                          2
-                        </td>
-                        <td>
-                          Henry Tom
-                        </td>
-                        <td>
-                         assistant2@gmail.com
-                        </td>
-                        <td>
-                          077666888
-                        </td>
-                        <td>
-                          <a onclick="return confirm('Do you want to edit this')"
-                          href="">
-                          <i class="mdi mdi-pencil text-success"
-                              style="font-size: 24px;"></i>
-                      </a>
+                  <div class="form-group">
+                    <label for="exampleInputDoctorOut">Result Out Put</label>
+                    <input type="text" class="form-control" id="exampleInputDoctorOut" placeholder="Result Out Put">
+                  </div>
 
+                  <div class="form-group">
+                    <label>File upload</label>
+                    <input type="file" name="img[]" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                      <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                      <span class="input-group-append">
+                        <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                      </span>
+                    </div>
+                  </div>
 
-                      <a onclick="return confirm('Are You Sure To Delete This')"
-                          href="">
-                          <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                  <div class="form-group">
+                    <label for="exampleInputDoctorPrice">Price</label>
+                    <input type="text" class="form-control" id="exampleInputDoctorPrice" placeholder="Price">
+                  </div>
+
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  <button class="btn btn-light" ><a href="lab-test-register-view.jsp">Cancel</a></button>
+                </form>
               </div>
             </div>
           </div>
-        
        
         </div>
         <!-- content-wrapper ends -->

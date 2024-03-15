@@ -246,101 +246,39 @@
           <!-- ====================================================
                               Content
           ==================================================== -->
-          <div class="col-lg-12 grid-margin stretch-card">
+
+          <div class="col-12 grid-margin stretch-card">
             <div class="card">
-              <div class="card-header">
-                <h4>LAB ASSISTANT
-                <a href="lab-assistant-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
-            </h4>
-       </div>
+
+               <div class="card-header">
+                        <h4>CREATE LAB REGISTRATION
+                        <a href="lab-test-type-view.jsp" class="btn btn-primary btn-sm text-white float-end">BACK</a>
+                    </h4>
+               </div>
               <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th>
-                          id
-                        </th>
-                        <th>
-                          Name
-                        </th>
-                        <th>
-                          Email
-                        </th>
-                        <th>
-                          NIC
-                        </th>
-                        
-                        <th>
-                          Actions
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-              
-                      <tr>
-                        <td >
-                          1
-                        </td>
-                        <td>
-                          John Doe
-                        </td>
-                       <td>
-                        assistant1@gmail.com
-                       </td>
-                        <td>
-                          0771234567
-                        </td>
-                        <td>
-                          <a onclick="return confirm('Do you want to edit this')"
-                          href="">
-                          <i class="mdi mdi-pencil text-success"
-                              style="font-size: 24px;"></i>
-                      </a>
+                
+                <form class="forms-sample">
+                  <div class="form-group">
+                    <label for="exampleInputPatientName">Test ID</label>
+                    <input type="text" class="form-control" id="exampleInputPatientName" placeholder="Name">
+                  </div>
 
+                  <div class="form-group">
+                    <label for="exampleInputDoctorName">Test Name</label>
+                    <input type="text" class="form-control" id="exampleInputDoctorName" placeholder="Name">
+                  </div>
 
-                      <a onclick="return confirm('Are You Sure To Delete This')"
-                          href="">
-                          <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td >
-                          2
-                        </td>
-                        <td>
-                          Henry Tom
-                        </td>
-                        <td>
-                         assistant2@gmail.com
-                        </td>
-                        <td>
-                          077666888
-                        </td>
-                        <td>
-                          <a onclick="return confirm('Do you want to edit this')"
-                          href="">
-                          <i class="mdi mdi-pencil text-success"
-                              style="font-size: 24px;"></i>
-                      </a>
+                  <div class="form-group">
+                    <label for="exampleTextarea1">Discription</label>
+                    <textarea class="form-control" id="exampleTextarea1" rows="4" placeholder="discription type here"></textarea> 
+                  </div>
 
-
-                      <a onclick="return confirm('Are You Sure To Delete This')"
-                          href="">
-                          <i class="mdi mdi-delete text-danger"
-                      style="font-size: 24px;"></i>
-                      </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  <button class="btn btn-light" ><a href="lab-test-register-view.jsp">Cancel</a></button>
+                </form>
               </div>
             </div>
           </div>
-        
        
         </div>
         <!-- content-wrapper ends -->

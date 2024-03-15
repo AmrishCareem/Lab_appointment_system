@@ -220,9 +220,20 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+              </ul>
+            </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+              </ul>
+            </div>
+            
           </li>
          
         </ul>
@@ -248,8 +259,8 @@
                 
                 <form class="forms-sample">
                   <div class="form-group">
-                    <label for="exampleInputName1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                    <label for="exampleInputName1">User Name</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="User Name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail3">Email address</label>
@@ -259,14 +270,8 @@
                     <label for="exampleInputPassword4">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
                   </div>
-                  <div class="form-group">
-                    <label for="exampleSelectGender">Gender</label>
-                      <select class="form-control" id="exampleSelectGender">
-                        <option>Male</option>
-                        <option>Female</option>
-                      </select>
-                    </div>
-                  <div class="form-group">
+                  
+                  <!-- <div class="form-group">
                     <label>File upload</label>
                     <input type="file" name="img[]" class="file-upload-default">
                     <div class="input-group col-xs-12">
@@ -275,15 +280,13 @@
                         <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                       </span>
                     </div>
-                  </div>
+                  </div> -->
+                  
                   <div class="form-group">
-                    <label for="exampleInputCity1">City</label>
-                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+                    <label for="exampleInputCity1">NIC</label>
+                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="NIC">
                   </div>
-                  <div class="form-group">
-                    <label for="exampleTextarea1">Textarea</label>
-                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                  </div>
+                  
                   <button type="submit" class="btn btn-primary me-2">Submit</button>
                   <button class="btn btn-light">Cancel</button>
                 </form>

@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.List, Doctorbean" import="javax.servlet.*" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -221,9 +219,20 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+              </ul>
+            </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+              </ul>
+            </div>
+            
           </li>
          
         </ul>
@@ -243,45 +252,87 @@
                 <a href="doctor-create.jsp" class="btn btn-primary btn-sm text-white float-end">Create</a>
             </h4>
        </div>
-                            <div class="card-body">
+              <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th>User</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Actions</th>
+                        <th>
+                          User
+                        </th>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Email
+                        </th>
+                        <th>
+                          phone
+                        </th>
+                        
+                        <th>
+                          Actions
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
-                      <% 
-                        List<Doctorbean> doctors = (List<Doctorbean>) request.getAttribute("doctors");
-                        if (doctors != null) {
-                          for (Doctorbean doctor : doctors) {
-                      %>
+              
                       <tr>
                         <td class="py-1">
-                          <!-- Replace with doctor image -->
-                          <img src="../../images/faces/face6.jpg" alt="image" />
+                          <img src="../../images/faces/face6.jpg" alt="image"/>
                         </td>
-                        <td><%= doctor.getName() %></td>
-                        <td><%= doctor.getEmail() %></td>
-                        <td><%= doctor.getContactNumber() %></td>
                         <td>
-                          <a onclick="return confirm('Do you want to edit this')" href="#">
-                            <i class="mdi mdi-pencil text-success" style="font-size: 24px;"></i>
-                          </a>
-                          <a onclick="return confirm('Are You Sure To Delete This')" href="#">
-                            <i class="mdi mdi-delete text-danger" style="font-size: 24px;"></i>
-                          </a>
+                          John Doe
+                        </td>
+                       <td>
+                        assistant1@gmail.com
+                       </td>
+                        <td>
+                          0771234567
+                        </td>
+                        <td>
+                          <a onclick="return confirm('Do you want to edit this')"
+                          href="">
+                          <i class="mdi mdi-pencil text-success"
+                              style="font-size: 24px;"></i>
+                      </a>
+
+
+                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          href="">
+                          <i class="mdi mdi-delete text-danger"
+                      style="font-size: 24px;"></i>
+                      </a>
                         </td>
                       </tr>
-                      <% 
-                          }
-                        }
-                      %>
+                      <tr>
+                        <td class="py-1">
+                          <img src="../../images/faces/face7.jpg" alt="image"/>
+                        </td>
+                        <td>
+                          Henry Tom
+                        </td>
+                        <td>
+                         assistant2@gmail.com
+                        </td>
+                        <td>
+                          077666888
+                        </td>
+                        <td>
+                          <a onclick="return confirm('Do you want to edit this')"
+                          href="">
+                          <i class="mdi mdi-pencil text-success"
+                              style="font-size: 24px;"></i>
+                      </a>
+
+
+                      <a onclick="return confirm('Are You Sure To Delete This')"
+                          href="">
+                          <i class="mdi mdi-delete text-danger"
+                      style="font-size: 24px;"></i>
+                      </a>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>

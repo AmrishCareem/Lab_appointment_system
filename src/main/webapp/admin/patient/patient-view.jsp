@@ -220,9 +220,20 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-view.jsp">View Lab test</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+              </ul>
+            </div>
+            <div class="collapse" id="lab-test">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+              </ul>
+            </div>
+            
           </li>
          
         </ul>
@@ -248,7 +259,7 @@
                     <thead>
                       <tr>
                         <th>
-                          User
+                          id
                         </th>
                         <th>
                           Name
@@ -257,7 +268,7 @@
                           Email
                         </th>
                         <th>
-                          phone
+                          NIC
                         </th>
                         
                         <th>
@@ -268,8 +279,8 @@
                     <tbody>
               
                       <tr>
-                        <td class="py-1">
-                          <img src="../../images/faces/face6.jpg" alt="image"/>
+                        <td >
+                          1
                         </td>
                         <td>
                           John Doe
@@ -296,8 +307,8 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="py-1">
-                          <img src="../../images/faces/face7.jpg" alt="image"/>
+                        <td >
+                          2
                         </td>
                         <td>
                           Henry Tom
