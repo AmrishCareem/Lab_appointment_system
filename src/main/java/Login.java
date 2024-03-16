@@ -36,13 +36,13 @@ public class Login extends HttpServlet {
             if (role.equals("admin")) {
                 response.sendRedirect("admin/index.jsp");
             } else if (role.equals("patient")) {
-                response.sendRedirect("patient_Page.jsp");
+                response.sendRedirect("patient/index.jsp");
             } else if (role.equals("lab_assistant")) {
-                response.sendRedirect("lab_assistant_Page.jsp");
+                response.sendRedirect("lab-assistant/index.jsp");
             }
         } else {
-            PrintWriter out = response.getWriter();
-            out.println("<html><body><p>Invalid username or password.</p></body></html>");
+        	PrintWriter out = response.getWriter();
+            out.println("<script>alert('Your Username or Password is invalid'); window.location.href='login.jsp';</script>");
         }
     }
 
