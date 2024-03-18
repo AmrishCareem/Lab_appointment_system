@@ -25,8 +25,8 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <a class="navbar-brand brand-logo" href="../index.jsp"><img src="../images/logo.svg" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="../index.jsp"><img src="../images/logo-mini.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo" href="index.jsp"><img src="../images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.jsp"><img src="../images/logo-mini.svg" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-sort-variant"></span>
           </button>
@@ -167,7 +167,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.jsp">
+            <a class="nav-link" href="index.jsp">
               <i class="mdi mdi-home menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -181,7 +181,7 @@
             </a>
             <div class="collapse" id="lab-assistant">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/lab-assistant/lab-assistant-view.jsp">View Lab Assistant</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="lab-assistant/lab-assistant-view.jsp">View Lab Assistant</a></li>  
               </ul>
             </div>
           </li>         
@@ -194,7 +194,7 @@
             </a>
             <div class="collapse" id="patient">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/patient/patient-view.jsp">View Patients</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="patient/patient-view.jsp">View Patients</a></li>  
               </ul>
             </div>
           </li>
@@ -207,7 +207,7 @@
             </a>
             <div class="collapse" id="doctor">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../admin/doctor/doctor-view.jsp">View Doctors</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="doctor/doctor-view.jsp">View Doctors</a></li>  
               </ul>
             </div>
           </li>
@@ -220,17 +220,17 @@
             </a>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-register-view.jsp">Test Register</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="lab-test/lab-test-register-view.jsp">Test Register</a></li>  
               </ul>
             </div>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-type-view.jsp">Test Type</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="lab-test/lab-test-type-view.jsp">Test Type</a></li>  
               </ul>
             </div>
             <div class="collapse" id="lab-test">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../admin/lab-test/lab-test-result-view.jsp">Test Result</a></li>  
+                <li class="nav-item"> <a class="nav-link" href="lab-test/lab-test-result-view.jsp">Test Result</a></li>  
               </ul>
             </div>
             
