@@ -79,4 +79,14 @@
     <servlet-name>DoctorListServlet</servlet-name>
     <url-pattern>/DoctorListServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>test_type</display-name>
+    <servlet-name>test_type</servlet-name>
+    <servlet-class>test_type</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test_type</servlet-name>
+    <url-pattern>/test_type</url-pattern>
+  </servlet-mapping>
 </web-app>
